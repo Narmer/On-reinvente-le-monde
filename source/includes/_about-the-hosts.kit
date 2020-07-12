@@ -1,0 +1,82 @@
+<!-- EXAMPLE: Split -->
+<!-- 1) Copy styles -->
+<style>
+/* scroll effect support */
+.scroll .slide.half-and-half,
+.scroll .slide.half-and-half .container {
+  min-height: 100vh;
+}
+
+.slide.half-and-half .wrap {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .slide.half-and-half .container,
+  .slide.half-and-half .wrap {
+    width: 100% !important;
+    height: 50vh;
+  }
+  .slide.half-and-half .content {
+    overflow: scroll;
+  }
+
+  .slide.half-and-half .container {
+    display: block;
+  }
+
+  .slide.half-and-half .wrap {
+    display: table;
+    background-attachment: inherit;
+  }
+
+  .slide.half-and-half .wrap .mobile-wrap {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+}
+</style>
+
+<!-- Split the Content -->
+<section class="slide autoHeight whiteSlide half-and-half">
+  <div class="content">
+    <div class="container">
+      <div class="wrap" style="background: #fff">
+
+        <div class="mobile-wrap">
+        <div class="fix-12-12 toCenter">
+          <ul class="flex fixedSpaces later">
+            <li class="col-12-12 ae-3 fromCenter">
+              <img class="round margin-bottom-3 margin-top-5" src="assets/img/gallery-45-1.jpg" height="256" alt="CoFounder"/>
+              <div class="fix-6-12">
+                <h4 class="smallest margin-bottom-1">Cédric FRANCIETTA</h4>
+                <p><span class="opacity-8">Fondateur de Geodetect et de Rocket</span></p>
+                <p><span class="opacity-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="wrap center" style="background: #fff">
+
+        <div class="mobile-wrap">
+          <ul class="flex fixedSpaces later">
+            <li class="col-12-12 ae-3 fromCenter">
+              <img class="round margin-bottom-3 margin-top-5" src="assets/img/dsizam.jpg" height="256" alt="CoFounder"/>
+              <div class="fix-6-12">
+                <h4 class="smallest margin-bottom-1">Dominique SIZAM</h4>
+                <p><span class="opacity-8">Fondateur de Shuttle Coder et Technomages</span></p>
+                <p><span class="opacity-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
