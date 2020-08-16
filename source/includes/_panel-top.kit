@@ -9,7 +9,7 @@
 
 <nav class="panel top">
   <div class="sections desktop">
-    <div class="left"><a href="./index.html" title="On réinvente le monde"><div class="textLogo selectable sourceSans">On <span class="text-purple">Réinvente</span> le monde</div></a></div>
+    <div class="left"><a href="./index.html" title="On réinvente le monde"><svg style="width:321px;height:93px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
     <div class="center">
       <ul class="menu uppercase">
         <li><a href="./episodes.html">Épisodes</a></li>
@@ -19,15 +19,11 @@
       </ul>
     </div>
     <div class="right">
-      <ul class="menu trim">
-        <li><a href="" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
-        <li><a href="" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
-        <li class="cropRight"><a href="" class="trimRight" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
-      </ul>
+      <a class="button menuButton popupTrigger purple rounded" href="#" data-popup-id="subscription">S'abonner</a>
     </div>
   </div>
   <div class="sections compact hidden">
-    <div class="left"><a href="./index.html" title="On réinvente le monde"><div class="textLogo selectable sourceSans">On <span class="text-purple">Réinvente</span> le monde</div></a></div>
+    <div class="left"><a href="./index.html" title="On réinvente le monde"><svg style="width:220px;height:33px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
     <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
   </div>
 </nav>
@@ -36,7 +32,7 @@
 <nav class="sidebar" data-sidebar-id="1">
   <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
-    <a href="./index.html" title="On réinvente le monde"><div class="textLogo selectable sourceSans">On <span class="text-purple">Réinvente</span> le monde</div></a>
+    <a href="./index.html" title="On réinvente le monde"><svg width="240" height="100"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo reverse"></use></svg></a>
     <ul class="mainMenu margin-top-3">
       <li><a href="./episodes.html">Épisodes</a></li>
       <li><a href="./about.html">À Propos</a></li>
@@ -44,19 +40,33 @@
       <li><a href="./support.html">Soutenir le podcast</a></li>
     </ul>
     <ul class="subMenu small opacity-8">
-      <li><a href="#">Soumettre un thème</a></li>
+      <li><a href="#">Proposer un sujet</a></li>
       <li><a href="#">---</a></li>
       <li><a href="#">---</a></li>
-      <li><a href="#">Mentions légales</a></li>
-      <li><a href="#">Vie privée</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <ul class="social opacity-8">
-      <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
-      <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
-      <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
     </ul>
   </div>
 </nav>
 
+<!-- Popup -->
+<div class="popup" data-popup-id="subscription">
+  <div class="close button closeButton white left opaque"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use></svg>Retour</div>
+  <div class="content popupContent">
+    <div class="container">
+      <div class="wrap spaces">
+        <div class="fix-10-12">
+          <h2>S'abonner</h2>
+          <div class="text-58">
+            <p><a href="#" class="button transparent"><i class="fas fa-5x fa-rss"></i></a></p>
+            <p>
+              <a href="#" class="button transparent"><i class="fas fa-3x fa-podcast"></i></a>
+              <a href="#" class="button transparent"><i class="fab fa-3x fa-spotify"></i></a>
+            </p>
+          </div>
+          <a class="button round white small" data-popup-action="close">Fermer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/img-58.jpg)"></div>
+</div>
 
